@@ -73,6 +73,15 @@ background-color: rgba(0,0,0, 0.7);
 }
 
 
+/* home-icons */
+#home-icons a {
+  text-decoration: none;
+}
+
+#home-icons i {
+  color: #343a40;
+}
+
 /* Video section */
 #video-play {
   position: relative;
@@ -85,6 +94,58 @@ background-color: rgba(0,0,0, 0.7);
 #video-play a {
   color: white;
 }
+
+
+/* Photo Gallery */
+.zoom {
+  width: 260px;
+  height: 260px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.zoom:hover {
+  width: 360px;
+  height: 360px;
+}
+
+@media(max-width: 1200px) {
+  .zoom {
+    width: 200px;
+    height: 200px;
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+  }
+
+  .zoom:hover {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media(max-width: 990px) {
+  .zoom {
+    width: 160px;
+    height: 160px;
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+  }
+
+  .zoom:hover {
+    width: 230px;
+    height: 230px;
+  }
+}
+
 
 /* Footer */
 #main-footer {
