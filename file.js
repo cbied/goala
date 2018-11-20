@@ -1,4 +1,4 @@
-// targets what you click
+// targets what you mouseover
 let myBtn = document.querySelector("#home-icons");
 
 myBtn.addEventListener("mouseover", function() {
@@ -15,3 +15,11 @@ myBtn.addEventListener("mouseout", function() {
   iconsOut[1].style.color = "#343a40";
   iconsOut[2].style.color = "#343a40";
 });
+
+// Photo Gallery background color changer
+const galleryBg = document.getElementById('gallery');
+galleryBg.addEventListener('mousemove', colorChanger)
+
+function colorChanger(colorEvent) {
+  galleryBg.style.backgroundColor = `rgb(${colorEvent.offsetX}, ${colorEvent.offsetY}, 200)`;
+}
